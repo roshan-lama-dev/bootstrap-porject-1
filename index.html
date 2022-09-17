@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- JavaScript Bundle with Popper -->
 
     <!-- bootstrap cdn -->
+    <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     />
 
-    <!-- fontawesome -->
+    <!-- font aswesome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -24,19 +24,17 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <!-- CSS only -->
-
-    <title>Portfolio</title>
+    <title>Roshan's portfolio</title>
   </head>
   <body>
     <div class="wrapper">
       <!-- navbar -->
-      <div class="topNav">
+      <div class="topNav" id="navbar">
         <nav class="navbar navbar-expand-md bg-none">
-          <div class="container w-5">
-            <a class="navbar-brand" href="#"
-              ><img src="assest/logo.png" alt="logo" width="100px"
-            /></a>
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="assest/logo.png" alt="logo" width="60px" />
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -51,43 +49,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a class="nav-link active" aria-current="page" href="#skill"
                     >Skills</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Project</a>
+                  <a class="nav-link" href="#project">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About Me</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
-                <!-- <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li> -->
-                <!-- <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li> -->
               </ul>
             </div>
           </div>
@@ -95,20 +69,172 @@
       </div>
 
       <!-- hero section -->
-      <div class="container">
-        <button type="button" class="btn btn-success">Download Resume</button>
-      </div>
+
+      <section class="hero">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-md-5 text-center order-md-2">
+              <img src="assest/Rectangle 3image.png" alt="my image" width="90%" />
+            </div>
+
+            <div class="col-md-7 mt-5 pt-5">
+              Hi 👋 i'm
+              <span class="fw-bold">Roshan Lama</span>
+              <div class="mt-2 mb-5 fs-3 fw-bold">
+                Software Engineer | Coding Student
+              </div>
+              <p>
+                I love codiong and solving problems with code and learning to
+                other what i know that makes me feel happy
+              </p>
+              <button class="btn btn-danger">
+                Download Resume <i class="fa-solid fa-download"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- skills -->
+      <section class="container">
+        <div class="row">
+          <div class="col">
+            <!-- title -->
+            <div class="title" id="skill">
+              <span>Skills</span>
+            </div>
+              <div class="icons">
+                <div><i class="fa-brands fa-html5 text-danger"></i>HTML</div>
+                <div><i class="fa-brands fa-css3-alt text-primary"></i>CSS</div>
+                <div><i class="fa-brands fa-square-js"></i>JavaScript</div>
+                <div><i class="fa-brands fa-html5"></i>Figma</div>
+              </div>
+            </div>
+
+            <!-- icons -->
+          </div>
+        </div>
+      </section>
+
       <!-- projects -->
+      <section class="projects py-4">
+        <div class="title" id="project">
+          <span>Projects</span>
+        </div>
+
+
+        <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <img src="assest/protfolio1.PNG" alt="protfolio1" width="100%" height="">
+          </div>
+          <div class="col-md mt-3"><h2>My Portfolio Site</h2>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-chrome"></i></a>
+         
+
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, at alias! Ea non beatae laboriosam reiciendis voluptatem ipsum! Odit aperiam maiores, consectetur doloribus ipsam eius?
+          </p>
+
+           </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-md mt-3 mb-3 order-md-2">
+            <img src="assest/protfolio1.PNG" alt="portfolio" width="100%">
+          </div>
+          <div class="col"><h2>My Portfolio Site</h2>
+          <a class="mr-5" href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-chrome"></i></a>
+          
+          <p class="mt-3 fw-bold">Tech Used: HTML, CSS, JAVAScript</p>
+
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, at alias! Ea non beatae laboriosam reiciendis voluptatem ipsum! Odit aperiam maiores, consectetur doloribus ipsam eius?
+          </p>
+
+           </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <img src="assest/protfolio1.PNG" alt="portfolio" width="100%">
+          </div>
+          <div class="col-md"><h2>My Portfolio Site</h2>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-chrome"></i></a>
+         
+
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, at alias! Ea non beatae laboriosam reiciendis voluptatem ipsum! Odit aperiam maiores, consectetur doloribus ipsam eius?
+          </p>
+
+           </div>
+        </div>
+      </div>
+       
+      </section>
       <!-- contact me -->
+      <section class="container">
+        <div class="title" id="contact">
+          <span>About Me</span>
+        </div>
+
+        <div class="row ">
+          <div class="col-md-3 mb-3">
+            <img src="assest/Rectangle 3image.png" alt="aboutmr" width="100%">
+          </div>
+          <div class="col-md-7">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusantium facilis in dicta quibusdam, nesciunt deleniti fugit. Vitae doloremque recusandae quod delectus magni nesciunt corrupti, facilis optio accusamus voluptates quasi?
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+
+      <section class="container contact mt-5">
+        <div class="title" id="about">
+          <span>Contact Me</span>
+        </div>
+
+        <div class="row mb-5" >
+          <div class="col d-flex justify-content-between mb-5">
+           <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+           <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+           <a href="mailto:lamarosan1998@gmail.com" target="_blank"> <i class="fa-solid fa-envelope"></i></a>
+           <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+    
+        </div>
+
+        </div>
+      </section>
+
+      <footer class="bg-dark text-light p-5 text-center">
+        Copryright &copy; All rights reserved.
+      </footer>
+      <a href="#navbar" id="uparrow"><i class="fa-solid fa-arrow-up"></i></a>
       <!-- footer -->
     </div>
 
+    <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const upbtn = document.getElementById("uparrow");
+      upbtn.style.display="none";
+      window.addEventListener("scroll", () =>{
+        upbtn.style.display = scrollY > 750 ? "block" : "none";
+      });
+
+
+    </script>
   </body>
 </html>
